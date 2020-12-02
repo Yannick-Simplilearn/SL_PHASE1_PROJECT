@@ -114,12 +114,15 @@ body {
 
 /* CONTENT */
 .left {
+    border-radius: 50px;
     padding: 55px;
     margin: 35px;
-    width: 500px;
+    width: 25%;
+    height: 1300px;
     background-color: #00991A;
     color: #5D5555;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
     float: left;
 }
 
@@ -127,4 +130,36 @@ body {
     text-decoration: underline;
     display: flex;
     justify-content: center;
+}
+
+.right-top {
+    border-radius: 50px;
+    padding: 55px;
+    margin: 0 57px;
+    width: 66%;
+    height: 750px;
+    float: right;
+}
+
+#content-pic {
+    border-radius: 50px;
+    border: solid #00991A 5px;
+}
+
+.content-pic2 {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.right-bottom {
+    border-radius: 50px;
+    padding: 55px;
+    margin: 0 35px;
+    width: 65%;
+    height: 590px;
+    background-color: #00991A;
+    color: #5D5555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    float: right;
 }
