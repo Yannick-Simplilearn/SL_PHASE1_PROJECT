@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #5D5555;
     margin: 0;
@@ -9,6 +5,7 @@ body {
 }
 
 /* HEADING + NAVBAR */
+
 #welcome-pic {
     display: flex;
     justify-content: center;
@@ -53,7 +50,7 @@ body {
 }
 
 .navbar-elements a:hover {
-    background-color: #8F9190;
+    background-color: #5D5555;
     color: #FEFEFE;
 }
 
@@ -113,12 +110,18 @@ body {
 }
 
 /* CONTENT */
+
+.left:hover, .right-bottom:hover {
+    color:  #FEFEFE;
+    background-color: #5D5555;
+}
+
 .left {
     border-radius: 50px;
-    padding: 55px;
-    margin: 35px;
+    padding: 2%;
+    margin: 2% 0 0 2%;
     width: 25%;
-    height: 1300px;
+    height: auto;
     background-color: #00991A;
     color: #5D5555;
     font-family: Arial, Helvetica, sans-serif;
@@ -134,16 +137,20 @@ body {
 
 .right-top {
     border-radius: 50px;
-    padding: 55px;
-    margin: 0 57px;
-    width: 66%;
-    height: 750px;
+    padding: 2%;
+    margin: 0.3% 13% 2% 2%;
+    width: 50%;
+    height: 38%;
     float: right;
+}
+
+#content-pic:hover {
+    border-color: #FEFEFE;
 }
 
 #content-pic {
     border-radius: 50px;
-    border: solid #00991A 5px;
+    border: solid 5px #00991A ;
 }
 
 .content-pic2 {
@@ -153,13 +160,38 @@ body {
 
 .right-bottom {
     border-radius: 50px;
-    padding: 55px;
-    margin: 0 35px;
-    width: 65%;
-    height: 590px;
+    padding: 2%;
+    margin: 1% 2% 0 0;
+    width: 59%;
+    height: auto;
     background-color: #00991A;
     color: #5D5555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     float: right;
+}
+
+/* FOOTER */
+
+#footer-line {
+    width: 100%;
+    height: 5px;
+    background-color: #00991A;
+    border: none;
+}
+.footer {
+    font-size: 1.4em;
+    display: block;
+    text-align: center;
+    margin-top: 55%;
+    width: 100%;
+    height: 60px;
+    background-color: #00991A;
+    color: #5D5555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer:hover {
+    color:  #FEFEFE;
+    background-color: #5D5555;
 }
