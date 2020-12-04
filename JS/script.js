@@ -8,7 +8,7 @@ burger.addEventListener('click', () => {
 
 //login check
 function checkInput() {
-    let uname = document.getElementById("uname").value;
+    var uname = document.getElementById("uname").value;
     let pw = document.getElementById("pw").value;
 
     if(uname.length == 0 && pw.length == 0) {
@@ -22,3 +22,4 @@ function checkInput() {
         return false;
     }
 }
+

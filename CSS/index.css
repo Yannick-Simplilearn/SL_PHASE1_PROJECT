@@ -180,6 +180,7 @@ body {
     border: none;
 }
 .footer {
+    clear: both;
     font-size: 1.4em;
     display: block;
     text-align: center;
@@ -195,3 +196,4 @@ body {
     color:  #FEFEFE;
     background-color: #5D5555;
 }
+
