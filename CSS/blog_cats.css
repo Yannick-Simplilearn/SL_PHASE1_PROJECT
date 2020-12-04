@@ -1,0 +1,12 @@
+#blog-pic {
+    float: left;
+    margin: 15px 15px 15px 0;
+}
+
+.cat-cont {
+    padding: 12px;
+    border: dashed black 2px;
+    width: 20%;
+    height: fit-content;
+    overflow: auto;
+}
