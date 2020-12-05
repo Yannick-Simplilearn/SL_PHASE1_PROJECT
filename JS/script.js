@@ -32,24 +32,48 @@ function showBlog() {
     let cat = document.getElementsByClassName("category")[0].value;
 
     if(cat == "1") {
+        if(document.getElementById("cat1")) {
         document.getElementById("cat1").style.display = "block";
+        }
+        if(document.getElementById("cat2")) {
         document.getElementById("cat2").style.display = "none";
+        }
+        if(document.getElementById("cat3")) {
         document.getElementById("cat3").style.display = "none";
+        }
     }
     else if(cat == "2") {
+        if(document.getElementById("cat2")) {
         document.getElementById("cat2").style.display = "block";
+        }
+        if(document.getElementById("cat1")) {
         document.getElementById("cat1").style.display = "none";
+        }
+        if(document.getElementById("cat3")) {
         document.getElementById("cat3").style.display = "none";
+        }
     }
     else if(cat == "3") {
+        if(document.getElementById("cat3")) {
         document.getElementById("cat3").style.display = "block";
+        }
+        if(document.getElementById("cat1")) {
         document.getElementById("cat1").style.display = "none";
+        }
+        if(document.getElementById("cat2")) {
         document.getElementById("cat2").style.display = "none";
+        }
     }
     else if(cat == "all") {
+        if(document.getElementById("cat1")) {
         document.getElementById("cat1").style.display = "block";
+        }
+        if(document.getElementById("cat2")) {
         document.getElementById("cat2").style.display = "block";
+        }
+        if(document.getElementById("cat3")) {
         document.getElementById("cat3").style.display = "block";
+        }
     }
 }
 
@@ -76,7 +100,7 @@ function insertNewEntry(data) {
     let rm = document.createElement("a");
     rm.innerHTML = "DELETE ENTRY";
     rm.setAttribute("href", "#");
-    rm.setAttribute("onclick", "onDelete(this)")
+    rm.setAttribute("onclick", "onDelete(this)");
     rm.innerHTML = "DELETE ENTRY";
     newDiv.appendChild(rm);
     let h = document.createElement("h3");
