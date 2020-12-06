@@ -93,7 +93,9 @@ function getEntryData() {
 
 //create new div and insert it
 function insertNewEntry(data) {
-     
+    
+    if(data.category.length == 0 || data.topic.length == 0 || data.text.length == 0) {}
+    else {
     let div = document.getElementById("insert");
     let newDiv = document.createElement("div");
     newDiv.setAttribute("id", "cat");
@@ -113,6 +115,7 @@ function insertNewEntry(data) {
     img.setAttribute("src", "https://picsum.photos/200");
     newDiv.appendChild(img);
     div.appendChild(newDiv);
+    }
 }
 
 function onDelete(obj) {
